@@ -1,0 +1,326 @@
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+nav .navbar-nav a {
+  color: #2e266f;
+  font-weight: 600;
+}
+
+.auth-desc h2 {
+  color: #efc81a;
+}
+
+.auth-desc h1 {
+  color: #efc81a;
+}
+
+.auth-desc p {
+  color: #8692a6;
+}
+
+.text-purple {
+  color: #2e266f;
+}
+
+.yellow-big-square::after {
+  content: '';
+  width: 400px;
+  height: 800px;
+  z-index: -5;
+  display: block;
+  background-color: #efc81a;
+  position: absolute;
+  top: -170px;
+  right: -60px;
+}
+
+.before-sub-title::before {
+  content: '';
+  width: 15px;
+  height: 80px;
+  background-color: #efc81a;
+  display: block;
+  position: absolute;
+  top: -50px;
+  transform: translateY(35%);
+}
+
+.square-border::after {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 2px solid #efc81a;
+  width: 500px;
+  height: 500px;
+  right: -20px;
+  top: 80px;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.square-block::after {
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: #efc81a;
+  width: 300px;
+  height: 500px;
+  left: -62px;
+  top: -30px;
+  z-index: -1;
+}
+
+.obstacle1 {
+  content: '';
+  width: 40px;
+  height: 700px;
+  background-color: #efc81a;
+  /* display: block; */
+  right: -60px;
+  top: 400px;
+  z-index: -5;
+}
+.obstacle2 {
+  content: '';
+  width: 40px;
+  height: 700px;
+  background-color: #efc81a;
+  /* display: block; */
+  right: -60px;
+  top: 1700px;
+  z-index: -100;
+}
+
+footer p,
+footer ul li {
+  color: #707070;
+}
+
+.form-style-custom input {
+  outline: none;
+}
+
+.form-style-custom input:hover {
+  border: 2px solid #efc81a;
+  box-shadow: 0px 0px 10px black;
+}
+
+.form-style-custom button {
+  background-color: #efc81a;
+}
+
+.form-style-custom button:hover {
+  background-color: #ffd82c;
+}
+
+.button-custom {
+  background-color: #efc81a;
+}
+.button-custom:hover {
+  background-color: #ffd82c;
+}
+
+.bullets-wrapper {
+  width: 70px;
+  left: -60px;
+  top: 70px;
+}
+
+.bullets {
+  background-color: #e6e6e6;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* ------------------------ home ----------------------------- */
+.popular-recipe-font {
+  color: #3f3a3a;
+}
+
+/* How to make checkbox yellow*/
+.check-wrap {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.check-wrap input {
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.check-wrap:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.check-wrap input:checked ~ .checkmark {
+  background-color: #efc81a;
+}
+
+.checkmark:after {
+  content: '';
+  position: absolute;
+  display: none;
+}
+
+.check-wrap input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.check-wrap .checkmark:after {
+  left: 7px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* end of checkmark */
+
+/* -----------------------------detail menu-------------------------------- */
+
+.like {
+  background-color: #efc81a;
+  width: 50px;
+  height: 50px;
+}
+
+.bookmark {
+  border: 2px solid #efc81a;
+  width: 50px;
+  height: 50px;
+}
+
+.comment textarea {
+  height: 300px;
+  background-color: #f6f5f4;
+}
+
+/* -----------------------------add menu-------------------------------- */
+
+.addimage {
+  height: 300px;
+  background-color: #f6f5f4;
+}
+.addtitle {
+  background-color: #f6f5f4;
+}
+
+.addingredients textarea {
+  height: 300px;
+  background-color: #f6f5f4;
+}
+
+.addcategory {
+  background-color: #f6f5f4;
+}
+
+/* -----------------------------edit menu-------------------------------- */
+
+.change-photo {
+  background-color: #30c0f3;
+}
+
+.edit-title {
+  background-color: #f6f5f4;
+}
+
+.edit-ingredients textarea {
+  height: 300px;
+  background-color: #f6f5f4;
+}
+
+.edit-category {
+  background-color: #f6f5f4;
+}
+
+/* -----------------------------detail profile-------------------------------- */
+
+.detail-profile-menu .selected {
+  color: #3f3a3a;
+}
+
+.detail-profile-menu a {
+  color: #b6b6b6;
+}
+
+.edit-menu {
+  background-color: #30c0f3;
+}
+
+.delete-menu {
+  background-color: #f57e71;
+}
+
+/* ------------------------------registrasi-------------------------------- */
+
+.registration input {
+  border-color: #8692a6;
+}
+
+@media (max-width: 1200px) {
+  .square-border::after {
+    height: 400px;
+    width: 400px;
+  }
+  .square-block::after {
+    height: 430px;
+  }
+}
+
+@media (max-width: 992px) {
+  .yellow-big-square::after {
+    height: 650px;
+    width: 300px;
+  }
+  .square-border::after {
+    height: 300px;
+    width: 300px;
+  }
+  .square-block::after {
+    height: 300px;
+    width: 230px;
+  }
+  .obstacle1 {
+    display: none;
+  }
+  .obstacle2 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .yellow-big-square::after {
+    display: none;
+  }
+  .square-border::after {
+    display: none;
+  }
+  .square-block::after {
+    display: none;
+  }
+  .bullets-wrapper .bullets {
+    display: none;
+  }
+}

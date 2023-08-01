@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Add Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../style/menu.css" />
+    <link rel="stylesheet" href="../assets/css/font.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light --bs-light-text-emphasis fixed-top">
+      <div class="container mt-3">
+        <div class="burger">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="navbarBack()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0">
+              <li class="nav-item me-5">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link" href="./addMenu.html">Add Recipe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#loginfirst" data-bs-toggle="modal" data-bs-target="#noticeModal">Search Menu</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-start border-warning border-4 ps-2">
+          <div class="d-flex align-items-center gap-3">
+            <div>
+              <a href="../profile/edit-profile.html">
+                <img src="../asset/img/Profil/ProfilNav.svg" alt="ProfilNav" />
+              </a>
+            </div>
+            <div>
+              <div class="m-0 p-0">Ayudia</div>
+              <div class="m-0 p-0 fw-bold"><a href="#" data-bs-toggle="modal" data-bs-target="#logoutModal" class="text-decoration-none text-black">Logout</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END Nav Bar -->
+    <section class="container w-100" style="margin-top: 100px">
+      <form action="" class="col-sm-12 col-md-9 col-lg-9 mx-auto">
+        <label for="addimage" class="addimage w-100 d-flex align-items-center justify-content-center rounded mt-5"
+          >Add Photo
+          <input type="file" name="" id="addimage" hidden />
+        </label>
+        <input type="text" name="" id="addtitle" placeholder="Title" class="addtitle p-3 mt-5 rounded border-0 w-100 form-control" />
+        <div class="addingredients">
+          <textarea name="" id="addingredients" placeholder="Ingredients" class="addingredients p-3 mt-5 rounded border-0 w-100 form-control"></textarea>
+        </div>
+        <div class="mt-5 col-sm-12 col-md-6">
+          <select class="form-select p-3 addcategory border-0" id="floatingSelect" aria-label="Floating label select example">
+            <option selected disabled>Category</option>
+            <option value="1">Main Course</option>
+            <option value="2">Desert</option>
+            <option value="3">Appetizer</option>
+          </select>
+        </div>
+        <div class="text-center">
+          <button class="p-3 bg-warning text-white rounded border-0 my-5 w-75">Post</button>
+        </div>
+      </form>
+    </section>
+    <section id="call-modal">
+      <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-warning" id="exampleModalLabel">You want to logout?</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- <div class="modal-body">
+                <p>Ini adalah konten dari modal.</p>
+              </div> -->
+            <div class="modal-footer border-0">
+              <button type="button" class="btn w-100 bg-warning text-white border-0">Yes</button>
+              <button type="button" class="btn bg-secondary-subtle w-100 text-white border-0" data-bs-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center bg-warning pt-5">
+      <h1 class="mt-5 text-purple">Eat, Cook, Repeat</h1>
+      <p>Share Your Best Recipe By Uploading Here !</p>
+      <div class="row justify-content-end m-0 p-0 mt-5 pt-5 pb-4">
+        <div class="d-flex justify-content-center col-lg-4">
+          <ul class="list-unstyled d-flex gap-3">
+            <li>Product</li>
+            <li>Company</li>
+            <li>Learn More</li>
+            <li>Get In Touch</li>
+          </ul>
+        </div>
+        <div class="col-lg-4 fw-bolder">&copy;Arkademy</div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>

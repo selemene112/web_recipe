@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Detail Menu</title>
+    <link rel="icon" href="../../assets/img/icon.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light --bs-light-text-emphasis fixed-top">
+      <div class="container mt-3">
+        <div class="burger">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="navbarBack()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mt-2 mb-lg-0">
+              <li class="nav-item me-5">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item me-5">
+                <a class="nav-link" href="./addMenu.html">Add Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./SeacrhMenu.html">Search Menu</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="user d-flex justify-content-center align-items-center">
+          <div class="photo me-4">
+            <img src="../asset/img/Profil/ProfilNav.svg" alt="Search" width="40" onclick="pageProfile()" />
+          </div>
+          <div class="text">
+            <p class="mb-0">Ayudia</p>
+            <p class="mb-0">
+              <a href="#" class="text-dark" data-bs-toggle="modal" data-bs-target="#logoutModal"><strong>Logout</strong></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="modal fade" id="logoutModal" tabindex="-1" aria-labelledby="logoutModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">You want to logout?</div>
+          <div class="modal-footer d-block mt-4">
+            <button type="button" class="btn btn-warning btnYes text-light" onclick="logout()">Yes</button>
+            <button type="button" class="btn btn-secondary btnCancel text-light" data-bs-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="home" style="margin-top: 120px">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 headUser">
+            <div class="user d-flex align-items-center ps-5">
+              <div class="photo me-4">
+                <img src="../asset/img/Profil/ProfilNav.svg" alt="Search" width="40" onclick="pageEditProfile()" />
+              </div>
+              <div class="text">
+                <p class="mb-0">Ayudia</p>
+                <p class="mb-0">
+                  <a href="#" class="text-dark"><strong>10 Recipes</strong></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 date">
+            <div class="d-flex align-items-center pe-5">
+              <div class="text ps-5">
+                <p class="mb-0">21 February 2023</p>
+                <p class="mb-0">20 Likes - 2 Comments</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center mt-5 homedetail">
+            <h1 class="mt-5">Egg Sandwich</h1>
+            <img src="../asset/img/landingPage/landing1.svg" alt="Search" class="mt-5 rounded-3" />
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-1"></div>
+          <div class="col-md-4">
+            <div class="listingre">
+              <h5>Ingredients</h5>
+              <ul>
+                <li>2 eggs</li>
+                <li>2 tbsp mayonnaise</li>
+                <li>3 slices bread</li>
+                <li>a little butter</li>
+                <li>⅓ carton of cress</li>
+                <li>2-3 slices of tomato or a lettuce leaf and a slice of ham or cheese</li>
+                <li>crisps , to serve</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+          <div class="col-md-4"></div>
+          <div class="col-md-1"></div>
+        </div>
+        <div class="row btnSL">
+          <div class="col-md-4">
+            <button type="button" class="btn btnsave"></button>
+            <button type="button" class="btn btnlike ms-2"></button>
+          </div>
+        </div>
+        <div class="row mt-5 tagComment">
+          <hr class="border border-warning border-2 opacity-100 mb-5" />
+          <div class="col-md-3 comment d-flex align-items-center">
+            <div class="user1 d-flex justify-content-center align-items-center">
+              <div class="photo me-4">
+                <img src="../asset/img/Profil/ProfilNav.svg" alt="Search" width="40" onclick="pageProfile()" />
+              </div>
+              <div class="text">
+                <p class="mb-0">Ayudia</p>
+                <p class="mb-0">
+                  <a href="#" class="text-dark" data-bs-toggle="modal" data-bs-target="#logoutModal"><strong>20 Recipes</strong></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 fillComment">
+            <p class="mt-3">Wow, I just made this and it was delicious! Thanks for sharing!</p>
+          </div>
+        </div>
+        <div class="row mt-5 tagComment">
+          <div class="col-md-3 comment d-flex align-items-center">
+            <div class="user1 d-flex justify-content-center align-items-center">
+              <div class="photo me-4">
+                <img src="../asset/img/Profil/ProfilNav.svg" alt="Search" width="40" onclick="pageProfile()" />
+              </div>
+              <div class="text">
+                <p class="mb-0">Ariel</p>
+                <p class="mb-0">
+                  <a href="#" class="text-dark" data-bs-toggle="modal" data-bs-target="#logoutModal"><strong>20 Recipes</strong></a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 fillComment">
+            <p class="mt-3">So simple and delicious!</p>
+          </div>
+          <hr class="border border-warning border-2 opacity-100 mt-5" />
+        </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10 mt-5">
+            <form action="#">
+              <div class="form-floating text-center">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 200px" required></textarea>
+                <label for="floatingTextarea">Your comment here!</label>
+                <button type="submit" class="btn btn-warning mt-4 text-light btncomment">Send a comment</button>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-warning d-flex align-items-center justify-content-center">
+      <div class="text-center text">
+        <p class="eat">Eat, Cook, Repeat</p>
+        <h6>Share Your Best Recipe By Uploading Here !</h6>
+        <ul class="list d-flex align-items-center justify-content-center">
+          <li class="list-group-item me-4 mt-5">Product</li>
+          <li class="list-group-item me-4 mt-5">Company</li>
+          <li class="list-group-item me-4 mt-5">Learn More</li>
+          <li class="list-group-item me-4 mt-5">Get In Touch</li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </body>
+</html>
